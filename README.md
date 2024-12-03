@@ -18,7 +18,7 @@
 ### Methodology
 <p>Similar to how we applied DAXPY for homework 2 in our class, we utilize vector calculations in this project. </p>
 <p>However, instead of multiplication, it's simply equating each vector index to the next index of objects </p>
-<p>inside the object transform array. This "gets rid" of a double for loop necessary in the sequential case! </p>
+<p>inside the object transform array. This is much faster in higher generation reqests than the loop necessary in the sequential case! </p>
 <br></br>
 <p>There are cons for this methodology though. Due to Unity's Core API being unsafe for multithreading, </p>
 <p>only limited Native Arrays are allowed to be utilized and all data needed to be </p>
@@ -72,8 +72,8 @@
 
 ### More Info
 <p>This project was meant for a university class.</p>
-<p>However, this is only part of a full repo for an indie game Andrew Aguilar </p>
-<p>is developing. More info of the Indie game can be found here <a href="https://sites.google.com/view/andrewaguilar/current-passion-project"> Andrew's Portfolio</a>.</p>
+<p>However, this is only part of a full repo for an indie game Andrew Aguilar is developing.</p>
+<p>More info of the Indie game can be found here <a href="https://sites.google.com/view/andrewaguilar/current-passion-project"> Andrew's Portfolio</a>.</p>
 <p>You can also play the Game's Alpha <a href="https://revisedwords.itch.io/bubas-boba-shoppe">HERE</a>.</p>
 <p align="left">
   <img src="https://github.com/Drewayou/BubasBobaShoppe-TreeGeneration/blob/main/Assets/Art/UIElements/MainMenu.png?raw=true" width="720"/>
