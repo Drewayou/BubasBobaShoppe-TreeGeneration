@@ -30,6 +30,10 @@
 <a name="methodology"></a>
 
 ### Methodology
+
+<sub>(*Below is an image of generating 25k trees WITHOUT Parallelism enabled  : Taking ~91s*)</sub><img src="Assets/Art/ForReadMeFile/91sFor25k.png"/>
+<sub>(*Below is an image of generating 25k trees WITH USING Parallelism enabled : Taking ~66s*)</sub><img src="Assets/Art/ForReadMeFile/25kTreesin1min.png"/>
+<br></br>
 <p>Similar to how we applied DAXPY for homework 2 in our class, we utilize vector calculations in this project. </p>
 <p>However, instead of multiplication, it's simply equating each vector index to the next index of objects </p>
 <p>inside the object transform array. This is much faster in higher generation reqests than the loop necessary in the sequential case! </p>
