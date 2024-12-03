@@ -1,6 +1,7 @@
 # BubasBobaShoppe-TreeGeneration
 <p>An alternative repo of Drew's <a href="https://github.com/Drewayou/BubasBobaShoppe">"BubasBobaShoppe"</a> for a parallel programming class,</p>
 <p>to attempt and implement tree generation via CPU multithreading in unity. </p>
+<p>The Online Github repo can be found : <a href="https://github.com/Drewayou/BubasBobaShoppe-TreeGeneration">HERE</a></p>
 
 <p align="center">
   <img src="Assets/Art/ForReadMeFile/25kTreesin1min.png?raw=true" width="1200" height="550"/>
