@@ -7,12 +7,25 @@
 </p>
 
 ## Table of contents
+- [Main Generator Script](#main-generator-script)
+<br></br>
 - [Methodology](#methodology)
 <br></br>
 - [How to run](#how-to-install)
 <br></br>
 - [More Info](#more-info)
 -------------------
+
+<a name="main-generator-script"></a>
+
+### Main Generator Script
+<h4>The main script that runs this generation is the <b>"GenerateTrees"</b> script.</h4>
+<p>So, any and all sequential and parallelism code can be found in it! </p>
+  <img src="Assets/Art/ForReadMeFile/CodeSS.png" width="820" height="950"/>
+<sub>(*Above is an snap shot of the script used to run this project*)</sub>
+
+-------------------
+
 <a name="methodology"></a>
 
 ### Methodology
@@ -22,7 +35,7 @@
 <br></br>
 <p>There are cons for this methodology though. Due to Unity's Core API being unsafe for multithreading, </p>
 <p>only limited Native Arrays are allowed to be utilized and all data needed to be </p>
-<p>processed *MUST* be fed in and expected as output. </p>
+<p>processed *MUST* be fed in and expected as output. Moreover, garbage collection must be manually done for these native arrays. </p>
 <p>This also means any Unity API's like Random.Range() or methods relying on the main thread itself cannot be accessed!</p>
 <br></br>
 <p>More info about Documentation used for this project can be found <a href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Jobs.IJobParallelForTransform.html">HERE</a> & <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/job-system-parallel-for-jobs.html">HERE</a>.</p> 
@@ -51,7 +64,7 @@
   <img src="Assets/Art/ForReadMeFile/UnityInstall.png?raw=true" width="720" height="150"/>
 <h4>2) Download and Open the project by selecting the "Asset" Folder.</h4>
 <sub>(*Some help can be found via Unity forums : Link can be found :
-  <a href="https://discussions.unity.com/t/how-to-open-unity-project-from-project-folder-where-file-is/641138"> HERE)</a>*
+  <a href="https://discussions.unity.com/t/how-to-open-unity-project-from-project-folder-where-file-is/641138"> HERE*)</a>
 </sub>
   <br></br>
   <img src="Assets/Art/ForReadMeFile/Projects.png?raw=true" width="720" height="250"/>
@@ -62,9 +75,9 @@
 <h4>5) In the Inspector, locate the "GenerateTrees" script and edit the amount of trees you want to add to the scene. Also check "on", or "off" the "Use Parallelism To Generate" bool.</h4>
   <img src="Assets/Art/ForReadMeFile/Inspector.png?raw=true" width="400" height="300"/>
 <h4>6) Hit "Play" and wait for the scene to generate.</h4>
-<sub>*(If you have an 8 core CPU or less, a suggestion of <25k trees would be advisable.*</sub>
-<sub>*Unity's "realtimeSinceStartup" documentation code was used and can be found : <a href="https://docs.unity3d.com/ScriptReference/Time-realtimeSinceStartup.html">HERE</a>*)</sub>
+<sub>(*If you have an 8 core CPU or less, a suggestion of <25k trees would be advisable.*)</sub>
   <img src="Assets/Art/ForReadMeFile/Play.png?raw=true" width="750" height="100"/>
+<sub>(*Unity's "realtimeSinceStartup" documentation code was used and can be found : <a href="https://docs.unity3d.com/ScriptReference/Time-realtimeSinceStartup.html">HERE</a>*)</sub>
 <h4>7) When done, check the console for the time it took to generate the trees!</h4>
   <img src="Assets/Art/ForReadMeFile/Console.png?raw=true" width="650" height="200"/>
 
@@ -77,6 +90,7 @@
 <p>However, this is only part of a full repo for an indie game Revisedwords (Andrew Aguilar) is developing.</p>
 <p>More info of the Indie game can be found here <a href="https://sites.google.com/view/andrewaguilar/current-passion-project"> Andrew's Portfolio</a>.</p>
 <p>You can also play the Game's Alpha <a href="https://revisedwords.itch.io/bubas-boba-shoppe">HERE</a>.</p>
+<sub>(*Note, Image quality is less when running this project and some things are ommitted in this repo for preservation of the main one.*)</sub>
 <p align="left">
   <img src="https://github.com/Drewayou/BubasBobaShoppe-TreeGeneration/blob/main/Assets/Art/UIElements/MainMenu.png?raw=true" width="720"/>
 </p>
