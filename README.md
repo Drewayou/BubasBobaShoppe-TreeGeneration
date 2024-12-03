@@ -9,7 +9,7 @@
 ## Table of contents
 - [Methodology](#methodology)
 <br></br>
-- [How to install](#how-to-install)
+- [How to run](#how-to-install)
 <br></br>
 - [More Info](#more-info)
 -----
