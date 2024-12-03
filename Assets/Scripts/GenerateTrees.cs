@@ -5,7 +5,7 @@ using Unity.Jobs;
 using System.Linq;
 using System.Collections;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class GenerateTrees : MonoBehaviour
 {
     //Struct to perform the job of randomply finding transform places for trees via Parallelism.
     public struct GenerationParallelJob : IJobParallelForTransform
